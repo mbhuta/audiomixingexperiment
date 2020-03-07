@@ -8,12 +8,12 @@
 
 import UIKit
 
+// MARK: Main Class Declaration and Lifecycle Functionality
 class EditingViewController: UIViewController {
-
-    //var mediaImagePreview: UIImageView!
-    var mediaPreview: MediaPreviewView!
     
     var voiceButton: UIButton!
+    
+    var mediaPreview: MediaPreviewView!
     
     override var prefersStatusBarHidden: Bool { return true }
     
@@ -21,20 +21,21 @@ class EditingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.setupMediaPreview()
-        self.setupButton()
+        self.initMediaPreview()
+        self.initButton()
         
     }
     
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         self.setSubviewFrames()
-        self.customizeSubviews()
+        self.setSubviewCustomizations()
     }
     
 }
 
-// MARK:- Media Setup
+// MARK: Media and UI Setup
 extension EditingViewController {
     
     func setSubviewFrames() {
@@ -42,17 +43,17 @@ extension EditingViewController {
         self.voiceButton.frame = self.view.getButtonRect(position: .topRight, padding: 16)
     }
     
-    func customizeSubviews() {
+    func setSubviewCustomizations() {
         self.voiceButton.round()
     }
     
-    func setupMediaPreview() {
+    func initMediaPreview() {
         self.mediaPreview = MediaPreviewView()
         self.mediaPreview.set(image: UIImage(named: "deadpool")!)
         self.view.addSubview(mediaPreview)
     }
     
-    func setupButton() {
+    func initButton() {
         self.voiceButton = UIButton()
         self.voiceButton.backgroundColor = .systemTeal
         self.voiceButton.addTarget(self, action: #selector(selectVoiceMode(_:)), for: .touchUpInside)
@@ -61,6 +62,7 @@ extension EditingViewController {
     
 }
 
+// MARK: Voice Mode Functionality
 extension EditingViewController: VoiceViewDelegate {
     
     @objc func selectVoiceMode(_ sender: UIButton) {

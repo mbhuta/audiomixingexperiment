@@ -41,16 +41,16 @@ class VoiceViewController: UIViewController {
         super.viewWillAppear(animated)
         self.delegate?.voiceView(willAppear: self)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.setupSubviewFrames()
+        self.customizeSubviews()
+    }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.delegate?.voiceView(willDisappear: self)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        self.setupSubviewFrames()
-        self.customizeSubviews()
     }
     
     // MARK: UI Setup Methods
@@ -138,13 +138,11 @@ extension VoiceViewController: AudioManagerUIDelegate {
         
         DispatchQueue.main.async {
             if percentage < 1.0 {
-                
-                    self.progressBar?.updateProgressLayer(strokeEnd: percentage)
+                self.progressBar?.updateProgressLayer(strokeEnd: percentage)
             }
             else {
                 self.audioManager?.resetPlayer()
                 self.progressBar?.resetProgressLayer()
-                //self.playButton?.setImage(UIImage(systemName: "play.fill"), for: .normal)
             }
         }
     }

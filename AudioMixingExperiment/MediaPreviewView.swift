@@ -18,7 +18,7 @@ class MediaPreviewView: UIView {
         }
         set {
             self.frame = newValue
-            self.previewImageView?.frame = frame
+            self.previewImageView?.frame = CGRect(origin: .zero, size: self.frame.size)
         }
     }
     
