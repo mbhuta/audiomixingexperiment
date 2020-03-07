@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B556D065241270EA00DF079C /* countryRoads_clip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B556D064241270EA00DF079C /* countryRoads_clip.mp3 */; };
+		B556D0672412710600DF079C /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B556D0662412710600DF079C /* AudioManager.swift */; };
+		B5815ECC240FCC16004A3F84 /* MediaPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5815ECB240FCC16004A3F84 /* MediaPreviewView.swift */; };
+		B5815ECE24123DBA004A3F84 /* VoiceProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5815ECD24123DBA004A3F84 /* VoiceProgressBarView.swift */; };
 		B597157B23A3F6BD001E4E2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597157A23A3F6BD001E4E2B /* AppDelegate.swift */; };
 		B597157D23A3F6BD001E4E2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597157C23A3F6BD001E4E2B /* SceneDelegate.swift */; };
 		B597157F23A3F6BD001E4E2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597157E23A3F6BD001E4E2B /* ViewController.swift */; };
 		B597158223A3F6BD001E4E2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B597158023A3F6BD001E4E2B /* Main.storyboard */; };
 		B597158423A3F6BE001E4E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B597158323A3F6BE001E4E2B /* Assets.xcassets */; };
 		B597158723A3F6BE001E4E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B597158523A3F6BE001E4E2B /* LaunchScreen.storyboard */; };
+		B597158F23A3FA55001E4E2B /* country_roads.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B597158E23A3FA55001E4E2B /* country_roads.mp3 */; };
+		B597159123A40622001E4E2B /* soundbyte1.wav in Resources */ = {isa = PBXBuildFile; fileRef = B597159023A40622001E4E2B /* soundbyte1.wav */; };
+		B597159523A4D2B5001E4E2B /* CSAudioData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597159423A4D2B5001E4E2B /* CSAudioData.swift */; };
+		B597159723A4F7AA001E4E2B /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597159623A4F7AA001E4E2B /* PlaybackViewController.swift */; };
+		B5F47672240A7D3A00A15CEC /* UIView+CustomAppearanceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F47671240A7D3A00A15CEC /* UIView+CustomAppearanceExtensions.swift */; };
+		B5F47675240A847A00A15CEC /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F47674240A847A00A15CEC /* EditingViewController.swift */; };
+		B5F47677240A933900A15CEC /* UIView+SafeAreaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F47676240A933900A15CEC /* UIView+SafeAreaExtensions.swift */; };
+		B5F4767C240A978A00A15CEC /* UIView+UIRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4767B240A978A00A15CEC /* UIView+UIRectExtensions.swift */; };
+		B5F47683240A9D4F00A15CEC /* VoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F47681240A9D4F00A15CEC /* VoiceViewController.swift */; };
+		B5F47684240A9D4F00A15CEC /* VoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F47682240A9D4F00A15CEC /* VoiceViewController.xib */; };
+		B5F47686240BE94600A15CEC /* SoundbyteHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F47685240BE94600A15CEC /* SoundbyteHandleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B556D064241270EA00DF079C /* countryRoads_clip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countryRoads_clip.mp3; sourceTree = "<group>"; };
+		B556D0662412710600DF079C /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		B5815ECB240FCC16004A3F84 /* MediaPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewView.swift; sourceTree = "<group>"; };
+		B5815ECD24123DBA004A3F84 /* VoiceProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceProgressBarView.swift; sourceTree = "<group>"; };
 		B597157723A3F6BD001E4E2B /* AudioMixingExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioMixingExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B597157A23A3F6BD001E4E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B597157C23A3F6BD001E4E2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +43,17 @@
 		B597158323A3F6BE001E4E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B597158623A3F6BE001E4E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B597158823A3F6BE001E4E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B597158E23A3FA55001E4E2B /* country_roads.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = country_roads.mp3; sourceTree = "<group>"; };
+		B597159023A40622001E4E2B /* soundbyte1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = soundbyte1.wav; sourceTree = "<group>"; };
+		B597159423A4D2B5001E4E2B /* CSAudioData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSAudioData.swift; sourceTree = "<group>"; };
+		B597159623A4F7AA001E4E2B /* PlaybackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
+		B5F47671240A7D3A00A15CEC /* UIView+CustomAppearanceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CustomAppearanceExtensions.swift"; sourceTree = "<group>"; };
+		B5F47674240A847A00A15CEC /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
+		B5F47676240A933900A15CEC /* UIView+SafeAreaExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SafeAreaExtensions.swift"; sourceTree = "<group>"; };
+		B5F4767B240A978A00A15CEC /* UIView+UIRectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UIRectExtensions.swift"; sourceTree = "<group>"; };
+		B5F47681240A9D4F00A15CEC /* VoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewController.swift; sourceTree = "<group>"; };
+		B5F47682240A9D4F00A15CEC /* VoiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoiceViewController.xib; sourceTree = "<group>"; };
+		B5F47685240BE94600A15CEC /* SoundbyteHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundbyteHandleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +86,54 @@
 		B597157923A3F6BD001E4E2B /* AudioMixingExperiment */ = {
 			isa = PBXGroup;
 			children = (
+				B5F47674240A847A00A15CEC /* EditingViewController.swift */,
 				B597157A23A3F6BD001E4E2B /* AppDelegate.swift */,
 				B597157C23A3F6BD001E4E2B /* SceneDelegate.swift */,
-				B597157E23A3F6BD001E4E2B /* ViewController.swift */,
 				B597158023A3F6BD001E4E2B /* Main.storyboard */,
 				B597158323A3F6BE001E4E2B /* Assets.xcassets */,
 				B597158523A3F6BE001E4E2B /* LaunchScreen.storyboard */,
 				B597158823A3F6BE001E4E2B /* Info.plist */,
+				B5F47678240A951100A15CEC /* AudioExperiment */,
+				B5F47670240A7CB400A15CEC /* Extensions */,
+				B5F47673240A840000A15CEC /* Resources */,
+				B5F47681240A9D4F00A15CEC /* VoiceViewController.swift */,
+				B5F47682240A9D4F00A15CEC /* VoiceViewController.xib */,
+				B5F47685240BE94600A15CEC /* SoundbyteHandleView.swift */,
+				B5815ECB240FCC16004A3F84 /* MediaPreviewView.swift */,
+				B5815ECD24123DBA004A3F84 /* VoiceProgressBarView.swift */,
+				B556D0662412710600DF079C /* AudioManager.swift */,
 			);
 			path = AudioMixingExperiment;
+			sourceTree = "<group>";
+		};
+		B5F47670240A7CB400A15CEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5F47671240A7D3A00A15CEC /* UIView+CustomAppearanceExtensions.swift */,
+				B5F47676240A933900A15CEC /* UIView+SafeAreaExtensions.swift */,
+				B5F4767B240A978A00A15CEC /* UIView+UIRectExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5F47673240A840000A15CEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B597159023A40622001E4E2B /* soundbyte1.wav */,
+				B556D064241270EA00DF079C /* countryRoads_clip.mp3 */,
+				B597158E23A3FA55001E4E2B /* country_roads.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B5F47678240A951100A15CEC /* AudioExperiment */ = {
+			isa = PBXGroup;
+			children = (
+				B597159423A4D2B5001E4E2B /* CSAudioData.swift */,
+				B597157E23A3F6BD001E4E2B /* ViewController.swift */,
+				B597159623A4F7AA001E4E2B /* PlaybackViewController.swift */,
+			);
+			path = AudioExperiment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +194,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B597159123A40622001E4E2B /* soundbyte1.wav in Resources */,
 				B597158723A3F6BE001E4E2B /* LaunchScreen.storyboard in Resources */,
+				B597158F23A3FA55001E4E2B /* country_roads.mp3 in Resources */,
+				B556D065241270EA00DF079C /* countryRoads_clip.mp3 in Resources */,
 				B597158423A3F6BE001E4E2B /* Assets.xcassets in Resources */,
 				B597158223A3F6BD001E4E2B /* Main.storyboard in Resources */,
+				B5F47684240A9D4F00A15CEC /* VoiceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +212,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B597157F23A3F6BD001E4E2B /* ViewController.swift in Sources */,
+				B5F47672240A7D3A00A15CEC /* UIView+CustomAppearanceExtensions.swift in Sources */,
+				B597159723A4F7AA001E4E2B /* PlaybackViewController.swift in Sources */,
+				B5F47675240A847A00A15CEC /* EditingViewController.swift in Sources */,
 				B597157B23A3F6BD001E4E2B /* AppDelegate.swift in Sources */,
+				B5815ECC240FCC16004A3F84 /* MediaPreviewView.swift in Sources */,
+				B5F47683240A9D4F00A15CEC /* VoiceViewController.swift in Sources */,
+				B5F4767C240A978A00A15CEC /* UIView+UIRectExtensions.swift in Sources */,
+				B556D0672412710600DF079C /* AudioManager.swift in Sources */,
+				B597159523A4D2B5001E4E2B /* CSAudioData.swift in Sources */,
+				B5F47677240A933900A15CEC /* UIView+SafeAreaExtensions.swift in Sources */,
+				B5F47686240BE94600A15CEC /* SoundbyteHandleView.swift in Sources */,
+				B5815ECE24123DBA004A3F84 /* VoiceProgressBarView.swift in Sources */,
 				B597157D23A3F6BD001E4E2B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
