@@ -46,12 +46,12 @@ class CSAudioFile {
     }
     
     var startFrame: AVAudioFramePosition?
-    var startTime: AVAudioTime? {
+    var renderTime: AVAudioTime? {
         get {
             if let startFrame = self.startFrame {
                 return AVAudioTime(sampleTime: startFrame, atRate: Double(self.sampleRate))
             }
-            return AVAudioTime(sampleTime: 0, atRate: Double(self.sampleRate))
+            return nil
         }
     }
     
